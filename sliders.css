@@ -1,0 +1,84 @@
+
+.slider {
+    border-bottom: 1px solid black;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.box {
+    display: grid;
+    place-content: center;
+    height: 500px;
+    /* min-width: 600px; */
+    border-right: 1px solid black;
+    img {
+        object-fit: cover;
+    }
+    h3 {
+        font-size: clamp(1.8rem, 1.2vw + .8rem, 2.5rem);
+        width: 600px;
+        max-width: 100vw;
+        text-align: center;
+    }
+    h4 {
+      font-size: 1.5rem;
+      width: 600px;
+      max-width: 100vw;
+      text-align: center;
+      line-height: 2;
+    }
+    div {
+      font-size: 2.2rem;
+      width: 600px;
+      max-width: 100vw;
+      text-align: center;
+      line-height: 0.8;
+    }
+}
+
+@media (max-width: 900px) {
+  .box {
+    height: 300px;
+    img {
+      height: 300px;
+      /* aspect-ratio: auto; */
+      width: auto;
+      /* width: 300px; */
+    }
+    h3, h4, div {
+      width: 300px;
+    }
+  }
+
+}
+
+/*** SCROLLBAR ***/
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+    height: 25px;
+    /* padding-top: 21px; */
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #858585; 
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    /* background: #505050;  */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #000000; 
+    cursor: pointer;
+    transition: 2s;
+  }
+
