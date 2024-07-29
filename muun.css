@@ -91,7 +91,7 @@ html {
     border-bottom: 1px solid black;
     color: rgb(36, 36, 36);
     h2 {
-        font-size: clamp(2.2rem, 1.6vw + 1.2rem, 3.2rem);
+        font-size: clamp(2rem, 1.6vw + 1.2rem, 3.2rem);
         font-weight: 400;
         text-align: center;
         padding-top: 6vw;
@@ -156,18 +156,18 @@ html {
     place-content: center;
     padding-block: 12vw;
     h3 {
-        font-size: clamp(2.5rem, 1.6vw + 1.2rem, 3.2rem);
+        font-size: clamp(2rem, 1.6vw + 1.2rem, 3.2rem);
         margin-bottom: 2rem;
     }
     h4 {
-        font-size: clamp(1.9rem, 1.1vw + 1rem, 3rem);
+        font-size: clamp(1.7rem, 1.1vw + 1rem, 3rem);
     }
     p {
         font-size: 1.4rem;
         margin-bottom: 2.9rem;
     }
     .email, .tel {
-        font-size: clamp(1.7rem, 1vw + .9rem, 3rem);
+        font-size: clamp(1.6rem, 1vw + .9rem, 3rem);
         margin-bottom: 0;
         font-weight: 700;
     }
@@ -178,6 +178,10 @@ html {
     background-color: black;
     display: grid;
     place-content: center;
+    svg {
+        max-width: 80%;
+        margin: auto;
+    }
 }
 
 .footer-bottom {
